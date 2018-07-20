@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "views/file.css">
+    <link herf="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+  <style>
+  body {
+      background-image: url("https://thumbs.dreamstime.com/b/seamless-pattern-cute-pet-wild-cartoon-animals-vector-texture-wallpapers-fills-web-page-backgrounds-40355277.jpg");
+      text-align: center;
+      font-size: 150%;
+      font-family: 'Knewave', cursive;
+    }
+    
+    h1 {
+      font-family: 'Knewave', cursive;
+      color: purple;
+    }
+    
+    h2 {
+       font-family: 'Knewave', cursive;
+      color: navy;
+    }
+    
+    .info-section {
+      font-size: 100%;
+      color : darkgreen ;
+      font-family: 'Knewave', cursive;
+      border: 1px dotted black;
+    }
+    
+    #title-section {
+      color: purple;
+    }
+    </style>
+<h1><b>What animal are you most like... let's get started</b></h1>
+<p>Do you prefer to dance or sing?</p>
+<form method = POST>
+  <input id="questionNumber" name="questionNumber" type="hidden" value="2">
+  <input id="name" name="name" type="hidden" value="<%=@name%>">
+
+  <input type="radio" id="first" name="first" value="0">Dance
+  <br>
+  <input type="radio" id="first" name="first" value="1">Sing
+  
+  <br>
+  <input type = "submit" value = "Sounds right">
+</form>

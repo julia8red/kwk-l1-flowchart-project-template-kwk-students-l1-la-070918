@@ -1,0 +1,27 @@
+body {
+  font-size: 100000px;
+      background-color: lavender;
+      font-family: 'Knewave', cursive;
+    }
+    
+    h1 {
+      font-family: 'Knewave', cursive;
+       font-size: 100000px;
+      color: purple;
+    }
+    
+    h2 {
+       font-family: 'Knewave', cursive;
+      color: navy;
+    }
+    
+    .info-section {
+      font-size: 100%;
+      color : darkgreen ;
+      font-family: 'Knewave', cursive;
+      border: 1px dotted black;
+    }
+    
+    #title-section {
+      color: purple;
+    }

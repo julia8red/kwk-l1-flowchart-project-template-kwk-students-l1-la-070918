@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="views/file.css">
+  <link herf="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+</head>
+  <style>
+body {
+      background-image: url("https://thumbs.dreamstime.com/b/seamless-pattern-cute-pet-wild-cartoon-animals-vector-texture-wallpapers-fills-web-page-backgrounds-40355277.jpg");
+      text-align: center;
+      font-size: 150%;
+      font-family: 'Knewave', cursive;
+    }
+    
+    h1 {
+      font-family: 'Knewave', cursive;
+      color: purple;
+    }
+    
+    h2 {
+       font-family: 'Knewave', cursive;
+      color: navy;
+    }
+    
+    .info-section {
+      font-size: 100%;
+      color : darkgreen ;
+      font-family: 'Knewave', cursive;
+      border: 1px dotted black;
+    }
+    
+    #title-section {
+      color: purple;
+    }
+    </style>
+<h1>What animal are you most like... let's get started</h1>
+<p>Nice purse or nice shoes?</p>
+<form method = POST>
+  <input id="questionNumber" name="questionNumber" type="hidden" value="4">
+  <input id="name" name="name" type="hidden" value="<%=@name%>">
+  <input id="first" name="first" type="hidden" value="<%=@choice1%>">
+  <input id="second" name="second" type="hidden" value="<%=@choice2%>">
+
+  <input type="radio" id="third" name="third" value="0">Purse
+  <br>
+  <input type="radio" id="third" name="third" value="1">Shoes
+  
+  <br>
+  <input type = "submit" value = "For Sure!">
+</form>
+</html>
